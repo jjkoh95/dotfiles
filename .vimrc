@@ -1,6 +1,10 @@
 " JJKOH edit
 syntax on
 set number
+set cursorline
+set ruler
+set ignorecase
+set smartcase
 " filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
@@ -8,6 +12,9 @@ set shiftwidth=2
 au Filetype python setl et ts=4 sw=4
 set expandtab
 retab
+" folding
+" nnoremap <space> za
+" vnoremap <space> zf
 " auto closing characters
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -22,6 +29,10 @@ inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]
 inoremap <expr> "  strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '"'
 inoremap <expr> '  strpart(getline('.'), col('.')-1, 1) == "'" ? "\<Right>" : "'"
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
+" backup off
+set nobackup
+set nowb
+set noswapfile
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
