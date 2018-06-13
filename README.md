@@ -1,2 +1,3 @@
-# vim_config
-Vim Config and Plugins
+# dotfiles
+-Vim Config and Plugins
+-Bash profile
