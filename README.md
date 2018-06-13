@@ -1,3 +1,3 @@
 # dotfiles
--Vim Config and Plugins
--Bash profile
+- Vim Config and Plugins
+- Bash profile
