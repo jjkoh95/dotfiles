@@ -1,47 +1,3 @@
-" JJKOH edit
-filetype plugin indent off
-set rtp+=~/.vim/syntax
-" filetype plugin indent on
-syntax on
-set number
-set cursorline
-set ruler
-set ignorecase
-set smartcase
-set tabstop=2
-set shiftwidth=2
-" make tab as 4 spaces in python
-au Filetype python setl et ts=4 sw=4
-set cindent
-set expandtab
-retab
-" folding
-" nnoremap <space> za
-" vnoremap <space> zf
-
-" wildignore
-set wildignore=*.class
-
-" auto closing characters
-"inoremap " ""<left>
-"inoremap ' ''<left>
-"inoremap ( ()<left>
-"inoremap [ []<left>
-"inoremap { {}<left>
-"inoremap {<CR> {<CR>}<ESC>O
-"inoremap {;<CR> {<CR>};<ESC>O
-
-"inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
-"inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
-"inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
-"inoremap <expr> "  strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '"'
-"inoremap <expr> '  strpart(getline('.'), col('.')-1, 1) == "'" ? "\<Right>" : "'"
-"inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-" backup off
-set nobackup
-set nowb
-set noswapfile
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -57,11 +13,11 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -70,6 +26,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+
 Plugin 'Valloric/YouCompleteMe'	
 
 " Golang Support?
@@ -93,3 +50,23 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+syntax on
+
+set number
+set cursorline
+set ruler
+set ignorecase
+set smartcase
+set tabstop=2
+set shiftwidth=2
+
+" copy to clipboard
+set clipboard=unnamed
+
+" backup off
+set nobackup
+set nowb
+set noswapfile
+
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
