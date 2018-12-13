@@ -36,6 +36,9 @@ Plugin 'fatih/vim-go'
 " TypeScript Support?
 Plugin 'leafgarland/typescript-vim'
 
+" Asynchronous Lint Engine - Keep the standard - required by StandardJS
+Plugin 'w0rp/ale'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,7 +61,8 @@ set ruler
 set ignorecase
 set smartcase
 set tabstop=2
-set shiftwidth=2
+set shiftwidth=2 
+set expandtab
 
 " copy to clipboard
 set clipboard=unnamed
@@ -70,3 +74,12 @@ set noswapfile
 
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {'javascript': ['standard']}
+
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
