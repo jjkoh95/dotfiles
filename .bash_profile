@@ -31,3 +31,7 @@ if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# Give my terminal some life
+export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
+
