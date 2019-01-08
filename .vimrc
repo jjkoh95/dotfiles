@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set encoding=utf-8
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -30,14 +32,30 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'	
 
 " Golang Support?
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 " Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
 
 " TypeScript Support?
 Plugin 'leafgarland/typescript-vim'
 
+" Vue support
+Plugin 'posva/vim-vue'
+
 " Asynchronous Lint Engine - Keep the standard - required by StandardJS
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
+
+" Solarized
+" Plugin 'altercation/vim-colors-solarized'
+
+" gruvbox
+Plugin 'morhetz/gruvbox'
+
+" vim statusline
+Plugin 'vim-airline/vim-airline'
+
+" vim-javascript
+Plugin 'pangloss/vim-javascript'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,7 +80,11 @@ set ignorecase
 set smartcase
 set tabstop=2
 set shiftwidth=2 
+set autoindent
+set copyindent
+set smarttab
 set expandtab
+
 
 " copy to clipboard
 set clipboard=unnamed
@@ -83,4 +105,46 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " 
 " let g:ale_lint_on_save = 1
 " let g:ale_fix_on_save = 1
+
+
+set splitbelow " i need this for :term
+
+" Don't show YCM's preview window [ I find it really annoying ]
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
+
+" Vim slows down when using this plugin How can I fix that?
+let g:vue_disable_pre_processors=1
+
+" Highlight search results
+set hlsearch
+
+" No annoying sound on errors
+set noerrorbells
+
+" try
+"     colorscheme desert
+" catch
+" endtry
+"
+" syntax enable
+" set background=dark
+" colorscheme solarized
+set background=dark
+colorscheme gruvbox
+
+" airline extensions - top bar
+let g:airline#extensions#tabline#enabled = 1
+
+" vim highlighting
+au BufRead,BufNewFile *.vue set ft=html
+
+" highlight keywords
+" syn match   myTodo   contained   "\<\(TODO\|FIXME\):"
+" hi def link myTodo Todo
+
+" vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
 

@@ -8,6 +8,8 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 alias vim='/applications/MacVim.app/Contents/MacOS/Vim'
+
+# alias vi='/applications/MacVim.app/Contents/MacOS/Vim'
 set viminfo=""
 # added by Anaconda3 5.3.0 installer
 # >>> conda init >>>
@@ -34,4 +36,10 @@ if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc' ]; the
 
 # Give my terminal some life
 export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
+
+# Make my terminal mutli-lingual
+export LANG="en_US.UTF-8"
+
+# development environment
+export NODE_ENV="development"
 
