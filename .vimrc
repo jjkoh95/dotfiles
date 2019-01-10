@@ -73,6 +73,17 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 syntax on
 
+" try
+"     colorscheme desert
+" catch
+" endtry
+"
+" syntax enable
+" set background=dark
+" colorscheme solarized
+set background=dark
+colorscheme gruvbox
+
 set number
 set cursorline
 set ruler
@@ -122,17 +133,6 @@ set hlsearch
 " No annoying sound on errors
 set noerrorbells
 
-" try
-"     colorscheme desert
-" catch
-" endtry
-"
-" syntax enable
-" set background=dark
-" colorscheme solarized
-set background=dark
-colorscheme gruvbox
-
 " airline extensions - top bar
 let g:airline#extensions#tabline#enabled = 1
 
@@ -147,4 +147,3 @@ au BufRead,BufNewFile *.vue set ft=html
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
-

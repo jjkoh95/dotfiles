@@ -1,0 +1,16 @@
+# Linux
+*~
+
+# MacOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
