@@ -5,7 +5,7 @@
 .DS_Store
 
 # Visual Studio Code
-.vscode/
+# .vscode/ # actually this is good to share common styling
 
 # Python
 __pycache__/
@@ -15,6 +15,9 @@ __pycache__/
 node_modules/
 # required by youcompleteme
 jsconfig.json
+# build file
+dist/
+bower_components/
 
 # compiled
 a.out

@@ -10,12 +10,6 @@ alias vim='/applications/MacVim.app/Contents/MacOS/Vim'
 # alias vi='/applications/MacVim.app/Contents/MacOS/Vim'
 set viminfo=""
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/jiajunkoh/Downloads/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc'; fi
-
 # Give my terminal some life
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -53,3 +47,12 @@ export CXX=g++ CC=gcc
 # git autocomplete thing
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 # source ~/git-completion.bash
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/jiajunkoh/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/jiajunkoh/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# VSCode making me mad
+# alias python=/anaconda3/bin/python

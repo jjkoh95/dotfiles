@@ -14,17 +14,23 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
+ 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
+
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+ 
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -47,21 +53,46 @@ Plugin 'posva/vim-vue'
 " Solarized
 " Plugin 'altercation/vim-colors-solarized'
 
-" gruvbox
-Plugin 'morhetz/gruvbox'
+" color scheme gruvbox
+" Plugin 'morhetz/gruvbox'
 
 " vim statusline
 Plugin 'vim-airline/vim-airline'
 
+" vim-airline themes
+Plugin 'vim-airline/vim-airline-themes'
+
 " vim-javascript
 Plugin 'pangloss/vim-javascript'
 
+" Add maktaba and codefmt to the runtimepath.
+" (The latter must be installed before it can be used.)
+" Plugin 'google/vim-maktaba'
+" Plugin 'google/vim-codefmt'
+
+" color scheme
+Plugin 'google/vim-colorscheme-primary'
+
+" search index
+Plugin 'google/vim-searchindex'
+
+" dracula color scheme
+Plugin 'dracula/vim'
+
+" vim-prettier
+" Plugin 'prettier/vim-prettier'
+
+" vim-syntastic
+" Plugin 'vim-syntastic/syntastic'
+
+" React plugins
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+" filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -77,12 +108,17 @@ syntax on
 "     colorscheme desert
 " catch
 " endtry
-"
+
 " syntax enable
 " set background=dark
 " colorscheme solarized
-set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
+set t_Co=256
+" set background=dark
+" set background=light
+" colorscheme primary
+color dracula
+let g:airline_theme='luna'
 
 set number
 set cursorline
@@ -95,7 +131,6 @@ set autoindent
 set copyindent
 set smarttab
 set expandtab
-
 
 " copy to clipboard
 set clipboard=unnamed
@@ -116,7 +151,6 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " 
 " let g:ale_lint_on_save = 1
 " let g:ale_fix_on_save = 1
-
 
 set splitbelow " i need this for :term
 
@@ -147,3 +181,22 @@ au BufRead,BufNewFile *.vue set ft=html
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
+
+" vim-prettier
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+" let g:prettier#exec_cmd_async = 1
+
+" syntastic
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
+" React stuffs?
+let g:jsx_pragma_required = 1
+
