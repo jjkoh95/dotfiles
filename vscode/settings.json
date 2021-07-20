@@ -1,0 +1,121 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+    // For visual mode
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<C-c>"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<C-v>"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "p"
+            ]
+        }
+    ],
+    // For normal mode
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<C-c>"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<C-v>"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "p"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        // false to make it default to original editor behavior
+        "<C-a>": false,
+        "<C-b>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        // "<C-d>": false,
+        "<C-e>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-j>": true,
+        "<C-k>": true,
+        "<C-o>": false,
+        "<C-q>": false,
+        "<C-t>": false,
+        "<C-v>": false,
+        "<C-w>": false
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "files.trimTrailingWhitespace": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "files.trimTrailingWhitespace": true
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "files.trimTrailingWhitespace": true
+    },
+    "[cpp]": {
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "files.trimTrailingWhitespace": true
+    },
+    "[plaintext]": {
+        // please dont override my test
+        "files.trimTrailingWhitespace": false,
+    },
+    "terminal.integrated.inheritEnv": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "window.zoomLevel": 2,
+    "editor.inlineSuggest.enabled": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    }
+}
