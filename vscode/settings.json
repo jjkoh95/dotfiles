@@ -1,5 +1,8 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "editor.rulers": [
+        80
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     // For visual mode
     "vim.visualModeKeyBindings": [
         {
@@ -59,7 +62,7 @@
         "<C-h>": false,
         "<C-j>": true,
         "<C-k>": true,
-        "<C-o>": false,
+        // "<C-o>": false,
         "<C-q>": false,
         "<C-t>": false,
         "<C-v>": false,
@@ -69,24 +72,21 @@
         "*.ipynb": "jupyter-notebook"
     },
     "go.toolsManagement.autoUpdate": true,
+    "files.trimTrailingWhitespace": true,
     "[typescript]": {
         "editor.tabSize": 4,
-        "files.trimTrailingWhitespace": true
     },
     "[javascript]": {
         "editor.tabSize": 2,
-        "files.trimTrailingWhitespace": true
     },
     "[vue]": {
         "editor.tabSize": 2,
-        "files.trimTrailingWhitespace": true
     },
     "[cpp]": {
         "editor.tabSize": 2,
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
-        "files.trimTrailingWhitespace": true
     },
     "[plaintext]": {
         // please dont override my test
@@ -94,28 +94,35 @@
     },
     "terminal.integrated.inheritEnv": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.watcherExclude": {
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
     },
     "editor.cursorStyle": "line",
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
     "explorer.confirmDelete": false,
     "C_Cpp.updateChannel": "Insiders",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "window.zoomLevel": 2,
     "editor.inlineSuggest.enabled": true,
     "emmet.includeLanguages": {
         "vue-html": "html",
         "vue": "html"
-    }
+    },
+    "redhat.telemetry.enabled": false,
+    "files.exclude": {
+        // "**/vendor": true,
+        // "**/node_modules": true,
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1,
 }
