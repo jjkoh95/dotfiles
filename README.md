@@ -21,6 +21,7 @@
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Nodejs -- Volta](https://volta.sh/)
 - [Deno](https://deno.land/manual@v1.25.0/getting_started/installation)
+- [Flutter](https://docs.flutter.dev/get-started/install)
 
 ## Tools
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
