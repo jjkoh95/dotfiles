@@ -22,6 +22,8 @@
 - [Nodejs -- Volta](https://volta.sh/)
 - [Deno](https://deno.land/manual@v1.25.0/getting_started/installation)
 - [Flutter](https://docs.flutter.dev/get-started/install)
+- [Java](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04)
+- [Scala](https://www.scala-lang.org/download/)
 
 ## Tools
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
