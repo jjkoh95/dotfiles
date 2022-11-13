@@ -34,9 +34,12 @@
 - [GCloud CLI](https://cloud.google.com/sdk/gcloud)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [GoogleDrive Mount](https://github.com/astrada/google-drive-ocamlfuse)
-- [Protobuf Compiler](https://grpc.io/docs/protoc-installation/)
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [mitmproxy](https://docs.mitmproxy.org/stable/overview-installation/)
+
+## Development stuffs
+- [go-zero](https://github.com/zeromicro/go-zero)
+- [Protobuf Compiler](https://grpc.io/docs/protoc-installation/)
 
 ## Some stuffs
 - [Ubuntu Google Pinyin](https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/#:~:text=We%20start%20the%20fcitx%2Dconfigtool,following%20command%20in%20the%20terminal.&text=Click%20%2B%20to%20add%20input%20methods.&text=Uncheck%20Only%20Show%20Current%20Language,Google%20Pinyin%20%2C%20and%20press%20OK%20.&text=Now%20you%20can%20start%20to,using%20Ctrl%20%2B%20Space%20by%20default.)
