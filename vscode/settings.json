@@ -1,8 +1,8 @@
 {
     "editor.rulers": [
-        80
+        120
     ],
-    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     // For visual mode
     "vim.visualModeKeyBindings": [
         {
@@ -78,6 +78,7 @@
     },
     "[javascript]": {
         "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     "[vue]": {
         "editor.tabSize": 2,
@@ -124,5 +125,14 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "window.zoomLevel": 1,
+    "files.associations": {
+        "*.hcl": "terraform"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "markdown-pdf.scale": 0.7,
+    "markdown-pdf.displayHeaderFooter": false,
+    "diffEditor.maxComputationTime": 0,
 }

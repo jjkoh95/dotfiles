@@ -1,6 +1,13 @@
 [user]
     name = Jia Jun Koh
     email = jjkoh95@gmail.com
+
 [core]
     editor = vim
     excludesfile = /home/jjkoh/.gitignore_global
+
+[pull]
+    rebase = true
+
+[init]
+    defaultBranch = main
