@@ -30,14 +30,13 @@
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [Bazel](https://bazel.build/install)
 - [Docker](https://docs.docker.com/get-docker/)
+- [NerdCTL](https://github.com/containerd/nerdctl)
 - [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [GCloud CLI](https://cloud.google.com/sdk/gcloud)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [GoogleDrive Mount](https://github.com/astrada/google-drive-ocamlfuse)
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [mitmproxy](https://docs.mitmproxy.org/stable/overview-installation/)
-
-## Development stuffs
 - [go-zero](https://github.com/zeromicro/go-zero)
 - [Protobuf Compiler](https://grpc.io/docs/protoc-installation/)
 
