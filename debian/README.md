@@ -4,3 +4,6 @@
 
 ## Google Pinyin
 - https://mrzhubin.wordpress.com/2019/09/20/install-google-pinyin-input-method-on-debian/
+
+## Korean text
+- sudo apt-get install fonts-nanum
