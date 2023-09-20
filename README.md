@@ -14,6 +14,7 @@
 - [Discord](https://discord.com/download)
 - [Telegram](https://desktop.telegram.org/)
 - [Zoom](https://zoom.us/download)
+- [AnyDesk](https://anydesk.com/en/downloads/linux)
 
 ## Programming
 - [Python -- Anaconda](https://www.anaconda.com/products/individual)
