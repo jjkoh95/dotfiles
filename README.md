@@ -6,6 +6,8 @@
 ## Application
 - [Chrome](https://www.google.com/chrome/)
 - [VSCode](https://code.visualstudio.com/)
+- [Cursor](https://www.cursor.com/)
+- [Zed](https://zed.dev/)
 - [Neovim](https://neovim.io/)
 - [DBeaver](https://dbeaver.io/)
 - [MySQL Workbench](https://dev.mysql.com/downloads/)
